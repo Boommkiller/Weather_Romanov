@@ -69,10 +69,17 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Models\Forecast.cs" />
+    <Compile Include="Models\WeatherRow.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json">
+      <Version>13.0.4</Version>
+    </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
